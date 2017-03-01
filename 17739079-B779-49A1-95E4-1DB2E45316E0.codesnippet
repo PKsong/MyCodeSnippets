@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>pkmarkall</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Life Cycle
+
+#pragma mark - Public Methods
+
+#pragma mark - Actions
+
+#pragma mark - Get Data
+
+#pragma mark - Private Methods
+
+#pragma mark - Notifications Regist
+
+#pragma mark Notifications CallBack
+
+#pragma mark - Delegate
+
+#pragma mark - Getter &amp; Setter</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>17739079-B779-49A1-95E4-1DB2E45316E0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>pkmarkAll</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
