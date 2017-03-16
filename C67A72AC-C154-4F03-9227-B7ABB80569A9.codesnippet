@@ -3,40 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pkmarkall</string>
+	<string>pklazy</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
-#pragma mark - Lazy
-
-#pragma mark - Life Cycle
-
-#pragma mark - Public Methods
-
-#pragma mark - Actions
-
-#pragma mark - Get Data
-
-#pragma mark - Private Methods
-
-#pragma mark - Notifications Regist
-
-#pragma mark Notifications CallBack
-
-#pragma mark - Delegate
-
-#pragma mark - UI Layout
-
-#pragma mark - Getter &amp; Setter</string>
+	<string>- (&lt;#class#&gt; *)&lt;#name#&gt; {
+    if (_&lt;#name#&gt; == nil) {
+        _&lt;#name#&gt; = [[&lt;#class#&gt; alloc] init];
+    }
+    return _&lt;#name#&gt;;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>17739079-B779-49A1-95E4-1DB2E45316E0</string>
+	<string>C67A72AC-C154-4F03-9227-B7ABB80569A9</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pkmarkAll</string>
+	<string>pklazy</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
