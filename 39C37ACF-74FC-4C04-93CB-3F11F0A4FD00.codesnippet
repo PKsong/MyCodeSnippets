@@ -3,19 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pkmark</string>
+	<string>pklazynothing</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma mark ------------------&lt;#mark#&gt;------------------</string>
+	<string>- (&lt;#class#&gt; *)&lt;#name#&gt; {
+    if (_&lt;#name#&gt; == nil) {
+        _&lt;#name#&gt; = &lt;#somethint#&gt;
+    }
+    return _&lt;#name#&gt;;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>39C37ACF-74FC-4C04-93CB-3F11F0A4FD00</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pkmark</string>
+	<string>pklazy-nothing</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

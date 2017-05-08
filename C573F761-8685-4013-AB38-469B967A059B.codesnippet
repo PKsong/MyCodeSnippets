@@ -3,25 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pkuigetter</string>
+	<string>pkcellinit</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (&lt;#class#&gt; *)&lt;#name#&gt; {
-    if (_&lt;#name#&gt; == nil) {
-        _&lt;#name#&gt; = [[&lt;#class#&gt; alloc] init];
-        [&lt;#super#&gt; addSubview:_&lt;#name#&gt;];
+	<string>- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        [self &lt;#setupSub#&gt;];
     }
-    return _&lt;#name#&gt;;
-}</string>
+    return self;
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C67A72AC-C154-4F03-9227-B7ABB80569A9</string>
+	<string>C573F761-8685-4013-AB38-469B967A059B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pkuigetter</string>
+	<string>pkcellinit</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

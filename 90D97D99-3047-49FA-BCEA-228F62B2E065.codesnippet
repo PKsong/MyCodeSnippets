@@ -3,25 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pkuigetter</string>
+	<string>pkmakeconstraint</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (&lt;#class#&gt; *)&lt;#name#&gt; {
-    if (_&lt;#name#&gt; == nil) {
-        _&lt;#name#&gt; = [[&lt;#class#&gt; alloc] init];
-        [&lt;#super#&gt; addSubview:_&lt;#name#&gt;];
-    }
-    return _&lt;#name#&gt;;
-}</string>
+	<string> [&lt;#kongjian#&gt; mas_makeConstraints:^(MASConstraintMaker *make) {
+     make.&lt;#tag#&gt;.&lt;#tag#&gt;.&lt;#tag#&gt;.&lt;#tag#&gt;;
+        make.&lt;#tag#&gt;.&lt;#tag#&gt;.&lt;#tag#&gt;.&lt;#tag#&gt;;
+        make.&lt;#tag#&gt;.&lt;#tag#&gt;.&lt;#tag#&gt;.&lt;#tag#&gt;;
+        make.&lt;#tag#&gt;.&lt;#tag#&gt;.&lt;#tag#&gt;.&lt;#tag#&gt;;
+    }];
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C67A72AC-C154-4F03-9227-B7ABB80569A9</string>
+	<string>90D97D99-3047-49FA-BCEA-228F62B2E065</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pkuigetter</string>
+	<string>pkmakeconstraint</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
