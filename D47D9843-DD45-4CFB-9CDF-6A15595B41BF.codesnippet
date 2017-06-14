@@ -3,19 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pkmhm</string>
+	<string>pkimgv</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>make.height.mas_equalTo(&lt;#float#&gt;);</string>
+	<string>- (UIImageView *)&lt;#name#&gt; {
+    if (_&lt;#name#&gt; == nil) {
+        UIImageView *v = [[UIImageView alloc] init];
+        v.backgroundColor = [UIColor grayColor];
+        [&lt;#superView#&gt; addSubview:v];
+        _&lt;#name#&gt; = v;
+    }
+    return _&lt;#name#&gt;;
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1DB1DA8F-7C98-4B22-AF61-F771185F9C98</string>
+	<string>D47D9843-DD45-4CFB-9CDF-6A15595B41BF</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pkmakeHeightMas_equalTo</string>
+	<string>pkImageView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

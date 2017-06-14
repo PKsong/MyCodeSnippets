@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>pkbutton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIButton *)&lt;#name#&gt; {
+    if (_&lt;#name#&gt; == nil) {
+        UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        btn.titleLabel.font = [UIFont systemFontOfSize:12];
+        [btn setTitle:@"" forState:UIControlStateNormal];
+        [btn setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+        [btn setTitleColor:Black_Color forState:UIControlStateNormal];
+        [btn addTarget:self action:@selector(&lt;#name#&gt;Click:) forControlEvents:UIControlEventTouchUpInside];
+        [self.contentView addSubview:btn];
+        _&lt;#name#&gt; = btn;
+        
+    }
+    return _&lt;#name#&gt;;
+}
+
+- (void)&lt;#name#&gt;Click:(UIButton *)sender {
+    
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B3A67394-FE5D-4472-AFC4-6D92A0B044AD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>pkbutton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

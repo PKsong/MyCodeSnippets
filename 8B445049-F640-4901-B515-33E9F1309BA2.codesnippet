@@ -2,20 +2,28 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pkmhm</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>make.height.mas_equalTo(&lt;#float#&gt;);</string>
+	<string>- (UIImageView *)&lt;#name#&gt; {
+    if (_&lt;#name#&gt; == nil) {
+        UIImageView *arrowImageView = [[UIImageView alloc] init];
+        arrowImageView.image = [UIImage imageNamed:@"nextPage"];
+        [self addSubview:arrowImageView];
+        _&lt;#name#&gt; = arrowImageView;
+    }
+    return _&lt;#name#&gt;;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1DB1DA8F-7C98-4B22-AF61-F771185F9C98</string>
+	<string>8B445049-F640-4901-B515-33E9F1309BA2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>pkimageview</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pkmakeHeightMas_equalTo</string>
+	<string>pkimageView</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

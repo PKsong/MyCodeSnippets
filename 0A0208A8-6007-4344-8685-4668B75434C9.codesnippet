@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UITextField *)inputTextField {
+    if (_inputTextField == nil) {
+        _inputTextField = [UITextField textFieldWithPlaceholder:@"请输入充值金额"];
+        _inputTextField.tag = 101;
+        [_inputTextField setBorderStyle:UITextBorderStyleNone];
+        _inputTextField.font = FONTS(16);
+        [_inputTextField addTarget:self action:@selector(valueChange:) forControlEvents:UIControlEventEditingChanged];
+        [self addSubview:_inputTextField];
+    }
+    return _inputTextField;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0A0208A8-6007-4344-8685-4668B75434C9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>pktextfield</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>pktextField</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

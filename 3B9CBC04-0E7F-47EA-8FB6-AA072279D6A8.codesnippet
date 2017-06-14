@@ -4,16 +4,26 @@
 <dict>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>make.bottom.equalTo(&lt;#view#&gt;).offset(&lt;#float#&gt;);</string>
+	<string>- (UIView *)&lt;#name#&gt; {
+    if (_&lt;#name#&gt; == nil) {
+        UIView *v = [[UIView alloc] init];
+        v.backgroundColor = White_Color;
+        [self.contentView addSubview:v];
+        _&lt;#name#&gt; = v;
+    }
+    return _&lt;#name#&gt;;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B6046E02-0AC9-4FFF-B7BF-D4BC7283A76C</string>
+	<string>3B9CBC04-0E7F-47EA-8FB6-AA072279D6A8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>pkview</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>My Code Snippet</string>
+	<string>pkview</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

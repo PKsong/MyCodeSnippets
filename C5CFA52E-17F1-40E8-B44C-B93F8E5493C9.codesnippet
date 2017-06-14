@@ -3,19 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pkmhm</string>
+	<string>pkenum</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>make.height.mas_equalTo(&lt;#float#&gt;);</string>
+	<string>typedef NS_ENUM(NSInteger, &lt;#QLType#&gt;) {
+    &lt;#QLTypeDefault#&gt;
+};
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1DB1DA8F-7C98-4B22-AF61-F771185F9C98</string>
+	<string>C5CFA52E-17F1-40E8-B44C-B93F8E5493C9</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pkmakeHeightMas_equalTo</string>
+	<string>pkNS_ENUM</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
