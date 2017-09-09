@@ -7,24 +7,20 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (UITextField *)&lt;#name#&gt; {
-    if (_&lt;#name#&gt; == nil) {
-        UITextField *v = [[UITextField alloc] init];
-        v.font = [UIFont systemFontOfSize:16];
-        v.placeholder = @"输入联系号码";
-        [self.contactView addSubview:v];
-        _&lt;#name#&gt; = v;
+	<string>- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        [self setupConstraints];
     }
-    return _&lt;#name#&gt;;
+    return self;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7C425F15-BB4A-49D3-81AB-AE4F41050B20</string>
+	<string>1BD1FC37-FB74-4DED-B10D-D58073C10F54</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>pktextfield</string>
+	<string>pkinitcell</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pktextfield</string>
+	<string>pkInitCell</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -2,29 +2,29 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>pkview</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (UITextField *)&lt;#name#&gt; {
+	<string>- (UIView *)&lt;#name#&gt; {
     if (_&lt;#name#&gt; == nil) {
-        UITextField *v = [[UITextField alloc] init];
-        v.font = [UIFont systemFontOfSize:16];
-        v.placeholder = @"输入联系号码";
-        [self.contactView addSubview:v];
-        _&lt;#name#&gt; = v;
+        UIView *line = [[UIView alloc] init];
+        line.backgroundColor = COLOR(244,244,244,1);
+        [self.contentView addSubview:line];
+        _&lt;#name#&gt; = line;
     }
     return _&lt;#name#&gt;;
-}</string>
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7C425F15-BB4A-49D3-81AB-AE4F41050B20</string>
+	<string>F217DACA-DB36-4C48-860D-FA77A068FC05</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>pktextfield</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pktextfield</string>
+	<string>pkview</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

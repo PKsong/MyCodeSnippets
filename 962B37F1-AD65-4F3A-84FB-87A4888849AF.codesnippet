@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>pkscrollviewcontentview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**  */
+@property (nonatomic, strong) UIScrollView *scrollView;
+/**  */
+@property (nonatomic, strong) UIView *contentView;
+
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = @"";
+    [self setupConstraints];
+    [self.contentView addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:nil];
+}
+
+- (void)dealloc {
+    [self.contentView removeObserver:self forKeyPath:@"frame"];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary&lt;NSKeyValueChangeKey,id&gt; *)change context:(void *)context {
+    CGRect frame = [[change valueForKey:@"new"] CGRectValue];
+    self.scrollView.scrollEnabled = frame.size.height &gt;= self.scrollView.frame.size.height;
+}
+
+
+#pragma mark - UI Layout
+- (void)setupConstraints {
+    
+    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.scrollView);
+        make.width.equalTo(self.scrollView);
+    }];
+    
+    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.bottom.equalTo(tipsBtn.mas_bottom).offset(34 + 49);
+    }];
+}
+#pragma mark - Getter &amp; Setter
+- (UIScrollView *)scrollView {
+    if (_scrollView == nil) {
+        UIScrollView *scrollerView = [UIScrollView new];
+        scrollerView.backgroundColor = BACKGROUND_COLOR;
+        scrollerView.showsVerticalScrollIndicator = NO;
+        scrollerView.showsHorizontalScrollIndicator = NO;
+        [self.view addSubview:scrollerView];
+        _scrollView = scrollerView;
+    }
+    return _scrollView;
+}
+- (UIView *)contentView {
+    if (_contentView == nil) {
+        UIView *contentView = UIView.new;
+        contentView.backgroundColor = BACKGROUND_COLOR;
+        [self.scrollView addSubview:contentView];
+        _contentView = contentView;
+    }
+    return _contentView;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>962B37F1-AD65-4F3A-84FB-87A4888849AF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>pkscrollViewWithContentView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

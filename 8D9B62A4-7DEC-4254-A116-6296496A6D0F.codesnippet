@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>pkscrollView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>Preprocessor</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**  */
+@property (nonatomic, strong) UIScrollView *scrollView;
+/**  */
+@property (nonatomic, strong) UIView *contentView;
+
+- (void)setupConstraints {
+    
+    [self.scrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
+    [self.contentView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.scrollView);
+        make.width.equalTo(self.scrollView);
+    }];
+}
+
+- (UIScrollView *)scrollView {
+    if (_scrollView == nil) {
+        UIScrollView *scrollerView = [UIScrollView new];
+        scrollerView.backgroundColor = BACKGROUND_COLOR;
+        scrollerView.showsVerticalScrollIndicator = NO;
+        scrollerView.showsHorizontalScrollIndicator = NO;
+        [self.view addSubview:scrollerView];
+        _scrollView = scrollerView;
+    }
+    return _scrollView;
+}
+- (UIView *)contentView {
+    if (_contentView == nil) {
+        UIView *contentView = UIView.new;
+        contentView.backgroundColor = BACKGROUND_COLOR;
+        [self.scrollView addSubview:contentView];
+        _contentView = contentView;
+    }
+    return _contentView;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8D9B62A4-7DEC-4254-A116-6296496A6D0F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>pkscrollView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

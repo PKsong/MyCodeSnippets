@@ -12,7 +12,7 @@
 	<string>- (UIImageView *)&lt;#name#&gt; {
     if (_&lt;#name#&gt; == nil) {
         UIImageView *v = [[UIImageView alloc] init];
-        v.backgroundColor = [UIColor grayColor];
+        v.backgroundColor = COLOR(244,244,244,1);
         [&lt;#superView#&gt; addSubview:v];
         _&lt;#name#&gt; = v;
     }

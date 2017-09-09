@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>pkkeyboardnotifi</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Notifications Regist
+- (void)registNotification {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardFrameChange:) name:UIKeyboardWillChangeFrameNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+}
+#pragma mark Notifications CallBack
+- (void)keyboardFrameChange:(NSNotification *)noti {
+    CGRect endFrame = [noti.userInfo[@"UIKeyboardFrameEndUserInfoKey"] CGRectValue];
+    CGFloat offsetY = CGRectGetHeight(self.inputBgView.frame);
+    double duration = [noti.userInfo[@"UIKeyboardAnimationDurationUserInfoKey"] doubleValue];
+    if (endFrame.origin.y &lt; SCREEN_HEIGHT) {
+        offsetY = -endFrame.size.height;
+    }
+    [self.inputBgView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.bottom.offset(offsetY);
+    }];
+    [UIView animateWithDuration:duration animations:^{
+        [self.view layoutIfNeeded];
+    }];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AFFCCDEB-DC46-414E-AE2D-973CA0AC68D9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>pkkeyboardNotifi</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
