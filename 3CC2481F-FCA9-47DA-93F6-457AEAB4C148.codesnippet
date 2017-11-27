@@ -33,6 +33,12 @@
     return v;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    UIView *v = [UIView new];
+    v.backgroundColor = BACKGROUND_COLOR;
+    return v;
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 0.01;
 }

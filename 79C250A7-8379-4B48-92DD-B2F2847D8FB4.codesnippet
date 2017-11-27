@@ -9,8 +9,12 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>
-/********** &lt;#title#&gt; **********/</string>
+	<string>/*************************************************************************************************/
+/*                                         &lt;#class#&gt;                                          */
+/*************************************************************************************************/
+/*
+ &lt;#detail#&gt;
+ */</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>79C250A7-8379-4B48-92DD-B2F2847D8FB4</string>
 	<key>IDECodeSnippetLanguage</key>
