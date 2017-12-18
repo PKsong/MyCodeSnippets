@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>pkdelegateapimanager</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - CTAPIManagerParamSource
+- (NSDictionary *)paramsForApi:(CTAPIBaseManager *)manager {
+    NSMutableDictionary *params = @{}.mutableCopy;
+    return params;
+}
+
+#pragma mark - CTAPIManagerCallBackDelegate
+- (void)managerCallAPIDidSuccess:(CTAPIBaseManager *)manager {
+    NSDictionary *dict = [manager fetchDataWithReformer:nil];
+    
+}
+
+- (void)managerCallAPIDidFailed:(CTAPIBaseManager *)manager {
+    
+}
+
+#pragma mark - CTAPIManagerInterceptor
+- (BOOL)manager:(CTAPIBaseManager *)manager shouldCallAPIWithParams:(NSDictionary *)params {
+    return YES;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>686BB67C-6618-4F50-90BD-B73867987CD1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>pkdelegateAPIManager</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

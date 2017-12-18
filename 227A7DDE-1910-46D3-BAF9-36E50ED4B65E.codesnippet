@@ -3,19 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pkcopy</string>
+	<string>pkconditiondelegate</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, copy) NSString *&lt;#name#&gt;</string>
+	<string>    if (_delegate &amp;&amp; [_delegate respondsToSelector:@selector(&lt;#selector#&gt;)]) {
+        &lt;#statements#&gt;
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F173D9AA-7D26-48F5-B97A-4790EE36FA9E</string>
+	<string>227A7DDE-1910-46D3-BAF9-36E50ED4B65E</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pkcopy</string>
+	<string>pk_condition_delegate</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

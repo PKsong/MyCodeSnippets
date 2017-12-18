@@ -3,19 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pkcopy</string>
+	<string>pkallocapimanager</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, copy) NSString *&lt;#name#&gt;</string>
+	<string>- (QLAPIManager *)&lt;#name#&gt; {
+    if (_&lt;#name#&gt; == nil) {
+        _&lt;#name#&gt; = [[QLAPIManager alloc] init];
+        _&lt;#name#&gt;.moduleName = &lt;#module#&gt;;
+        _&lt;#name#&gt;.delegate = self;
+        _&lt;#name#&gt;.paramSource = self;
+        _&lt;#name#&gt;.interceptor = self;
+    }
+    return _&lt;#name#&gt;;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F173D9AA-7D26-48F5-B97A-4790EE36FA9E</string>
+	<string>76931EA8-CF1F-4496-8827-D65C5CDDB77E</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pkcopy</string>
+	<string>pkallocAPIManager</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

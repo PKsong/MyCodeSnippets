@@ -11,7 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>- (UILabel *)&lt;#name#&gt; {
     if (_&lt;#name#&gt; == nil) {
-        UILabel *l = [UILabel labelWithText:@"khan" atColor:[UIColor blackColor] atTextSize:15];
+        UILabel *l = [UILabel labelWithText:@"khan" atColor:&lt;#name#&gt; atTextSize:15];
         [&lt;#superView#&gt; addSubview:l];
         _&lt;#name#&gt; = l;
     }

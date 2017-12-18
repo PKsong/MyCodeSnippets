@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pkcopy</string>
+	<string>pkprotocolapimanager</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, copy) NSString *&lt;#name#&gt;</string>
+	<string>CTAPIManagerInterceptor, CTAPIManagerCallBackDelegate, CTAPIManagerParamSource, </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F173D9AA-7D26-48F5-B97A-4790EE36FA9E</string>
+	<string>C2453375-3B12-494E-8B42-EA187C1FCEEF</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pkcopy</string>
+	<string>pkprotocolAPIManager</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

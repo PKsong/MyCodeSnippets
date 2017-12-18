@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pkcopy</string>
+	<string>pkstrongify</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, copy) NSString *&lt;#name#&gt;</string>
+	<string>@strongify(self)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F173D9AA-7D26-48F5-B97A-4790EE36FA9E</string>
+	<string>EF786165-BC44-48C2-8BF4-797B58E99868</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>pkcopy</string>
+	<string>pk_strongify</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
