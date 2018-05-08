@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>pkmark</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//MARK: - *********** Liftcycle ***********
+
+//MARK: - *********** SubViews ***********
+
+//MARK: - *********** Variable ***********
+
+//MARK: - Delegate
+
+//MARK: - Event Handle
+
+//MARK: - Private Method
+
+//MARK: - Render SubView
+
+//MARK: - Public Method</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A6EE1890-5BC6-4A61-A958-1F9BAEAE39C0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>sw-pkmark</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
