@@ -3,33 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>pkmark</string>
+	<string>pkstrongself</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>//MARK: - *********** Liftcycle ***********
-
-//MARK: - *********** SubViews ***********
-
-//MARK: - *********** Variable ***********
-
-//MARK: - Delegate
-
-//MARK: - Event Handle
-
-//MARK: - Private Method
-
-//MARK: - Render SubView
-
-//MARK: - Public Method</string>
+	<string>guard let strongSelf = self else {
+                return
+            }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A6EE1890-5BC6-4A61-A958-1F9BAEAE39C0</string>
+	<string>4F4067C3-30B6-4178-8F9E-1B59C516E562</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>sw-pkmark</string>
+	<string>swift-strongSelf</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
