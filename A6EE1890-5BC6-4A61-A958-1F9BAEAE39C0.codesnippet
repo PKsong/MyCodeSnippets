@@ -9,11 +9,11 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>//MARK: - *********** Liftcycle ***********
+	<string>//MARK: - *********** Variable ***********
 
 //MARK: - *********** SubViews ***********
 
-//MARK: - *********** Variable ***********
+//MARK: - *********** Liftcycle ***********
 
 //MARK: - Delegate
 
@@ -28,6 +28,8 @@
 	<string>A6EE1890-5BC6-4A61-A958-1F9BAEAE39C0</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
 	<string>sw-pkmark</string>
 	<key>IDECodeSnippetUserSnippet</key>
