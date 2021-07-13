@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>pkviewmodel</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>import Foundation
+import IGListKit
+
+final class PKVideoLabelViewModel {
+    let text: String
+    init(text: String) {
+        self.text = text
+    }
+}
+
+extension PKVideoLabelViewModel: ListDiffable {
+    func diffIdentifier() -&gt; NSObjectProtocol {
+        text as NSObjectProtocol
+    }
+    
+    func isEqual(toDiffableObject object: ListDiffable?) -&gt; Bool {
+        guard let object = object as? PKVideoLabelViewModel else { return false }
+        if self === object { return true }
+        return self == object
+    }
+}
+
+extension PKVideoLabelViewModel: AutoEquatable {}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2E3D110B-4CCF-4233-93D3-B5886026507E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>pk_view_model</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
